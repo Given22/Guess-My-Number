@@ -1,0 +1,133 @@
+$backgroundColor: rgb(30, 37, 30);
+$fontColor: rgb(251, 252, 228);
+$hoverColor: rgb(229, 230, 217);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+}
+body {
+  background-color: $backgroundColor;
+
+  display: flex;
+}
+
+.main{
+  h1, p {
+    color: $fontColor;
+  }
+
+  header {
+    margin-top: 1.5em;
+    width: 100vw;
+    height: 15vh;
+    p {
+      position: absolute;
+      right: 5vw;
+    }
+    .again {
+      position: absolute;
+      left: 3vw;
+      background-color: $fontColor;
+      padding: 1em;
+      font-size: 1.25em;
+      color: $backgroundColor;
+      &:hover{
+        background-color: $hoverColor;
+      }
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section_one {
+    margin-top: 0vh;
+    width: 100vw;
+    h1 {
+      text-align: center;
+      font-size: 2em
+    }
+  }
+
+  .section_two{
+    margin-top: 15vh;
+    p{
+      z-index: 1;
+      display: flex;
+      padding: 10px;
+      margin: auto;
+      color: $backgroundColor;
+      font-size: 3em;
+      width: 2em;
+      height: 1.5em;
+      align-items: center;
+      justify-content: center;
+      background-color: $fontColor;
+    }
+    span{
+      position:relative;
+      top:-3em;
+      width:100vw;
+      height: 1vh;
+      color: $backgroundColor;
+      background-color: $fontColor;
+    }
+  }
+  .section_three{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    margin-top:15vh;
+    width: 100%;
+    justify-content: space-evenly;
+
+    .check{
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      width: 25%;
+      align-items: center;
+      input{
+        background-color: $backgroundColor;
+        color: $fontColor;
+        width: 100%;
+        height: 2em;
+        font-size: 2em;
+        border: 2px solid $fontColor;
+        text-align: center; 
+      }
+      .check_btn{
+        background-color: $fontColor;
+        width: 80%;
+        padding: 1em;
+        font-size: 1.25em;
+        color: $backgroundColor;
+        &:hover{
+          background-color: $hoverColor;
+        }
+      }
+    }
+
+    .scoreTable{
+      width: 35%;
+      p{
+        font-size: 20px
+      }
+
+      .scoreTable_score,
+      .scoreTable_highscore {
+        display: flex;
+        gap: 1em;
+        
+      }
+    
+      .scoreTable_text {
+        margin-bottom: 3em;
+      }
+    }
+  }
+}

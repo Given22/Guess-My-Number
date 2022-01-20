@@ -5,10 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess My Number!</title>
-    <link href='styles.css' rel='stylesheet' />
-</head>
+    <link href='style.css' rel='stylesheet' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
 <body>
-    <h1>Guess My Number!</h1>
+    <section class='main' >
+        <header>
+            <button class='btn again' class="again">Again!</button>
+            <p>&#60;Between 1 and 30&#62;</p>
+        </header>
+        <section class="section_one">
+            <h1 >
+                Guess My Number
+            </h1>
+        </section>
+        <section class='section_two'>
+            <p class="random_Number">?</p>
+            <span></span>
+        </section>
+        <section class='section_three'>
+            <div class='check'>
+                <input type="number" class="input_number">
+                <button class='btn check_btn'>Check!</button>
+            </div>
+            <div class='scoreTable'>
+                <p class='scoreTable_text'>Start guessing...</p>
+                <div class='scoreTable_score'>
+                    <p>✍️ Score: </p>
+                    <p class='score'>0</p>
+                </div>
+                <div class='scoreTable_highscore'>
+                    <p>🏆 Highscore: </p>
+                    <p class='highscore'>0</p>
+                </div>
+            </div>
+        </section>
+    </section>
     <script src='script.js'></script>
 </body>
 </html>

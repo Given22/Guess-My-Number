@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  background-color: #1e251e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main h1, .main p {
+  color: #fbfce4;
+}
+
+.main header {
+  margin-top: 1.5em;
+  width: 100vw;
+  height: 15vh;
+}
+
+.main header p {
+  position: absolute;
+  right: 5vw;
+}
+
+.main header .again {
+  position: absolute;
+  left: 3vw;
+  background-color: #fbfce4;
+  padding: 1em;
+  font-size: 1.25em;
+  color: #1e251e;
+}
+
+.main header .again:hover {
+  background-color: #e5e6d9;
+}
+
+.main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .section_one {
+  margin-top: 0vh;
+  width: 100vw;
+}
+
+.main .section_one h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.main .section_two {
+  margin-top: 15vh;
+}
+
+.main .section_two p {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  margin: auto;
+  color: #1e251e;
+  font-size: 3em;
+  width: 2em;
+  height: 1.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fbfce4;
+}
+
+.main .section_two span {
+  position: relative;
+  top: -3em;
+  width: 100vw;
+  height: 1vh;
+  color: #1e251e;
+  background-color: #fbfce4;
+}
+
+.main .section_three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 3em;
+  margin-top: 15vh;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main .section_three .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+  width: 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .section_three .check input {
+  background-color: #1e251e;
+  color: #fbfce4;
+  width: 100%;
+  height: 2em;
+  font-size: 2em;
+  border: 2px solid #fbfce4;
+  text-align: center;
+}
+
+.main .section_three .check .check_btn {
+  background-color: #fbfce4;
+  width: 80%;
+  padding: 1em;
+  font-size: 1.25em;
+  color: #1e251e;
+}
+
+.main .section_three .check .check_btn:hover {
+  background-color: #e5e6d9;
+}
+
+.main .section_three .scoreTable {
+  width: 35%;
+}
+
+.main .section_three .scoreTable p {
+  font-size: 20px;
+}
+
+.main .section_three .scoreTable .scoreTable_score,
+.main .section_three .scoreTable .scoreTable_highscore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+
+.main .section_three .scoreTable .scoreTable_text {
+  margin-bottom: 3em;
+}
+/*# sourceMappingURL=style.css.map */
